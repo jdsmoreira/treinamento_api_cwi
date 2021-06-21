@@ -1,0 +1,182 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 1,
+    "failures": -1,
+    "start": "2021-06-21T12:16:26.625Z",
+    "end": "2021-06-21T12:16:28.308Z",
+    "duration": 1683,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 20,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 1,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "fcd77f18-0b4a-4057-af61-c2aeacd8f803",
+      "title": "",
+      "fullFile": "cypress/integration/services/CreateBooking.spec.js",
+      "file": "cypress/integration/services/CreateBooking.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "992f8c04-02eb-42d2-8446-c560d27eaa03",
+          "title": "Create Booking",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Criar uma nova reserva - @acceptance",
+              "fullTitle": "Create Booking Criar uma nova reserva - @acceptance",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "3931de41-23e3-426d-9269-70e94048e3e2",
+              "parentUUID": "992f8c04-02eb-42d2-8446-c560d27eaa03",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar retorno 500 quando o payload da reserva estiver inválido - @e2e",
+              "fullTitle": "Create Booking Validar retorno 500 quando o payload da reserva estiver inválido - @e2e",
+              "timedOut": null,
+              "duration": 857,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.createBookingInvalidPayLoad().should(function (response) {\n  expect(response.status).to.eq(500);\n});",
+              "err": {},
+              "uuid": "5f9ded2e-c894-4340-b747-77de074a6a36",
+              "parentUUID": "992f8c04-02eb-42d2-8446-c560d27eaa03",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar a criacao de mais de um livro em sequencia - @e2e",
+              "fullTitle": "Create Booking Validar a criacao de mais de um livro em sequencia - @e2e",
+              "timedOut": null,
+              "duration": 371,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.createBooking().should(function (response) {\n  expect(response.status).to.eq(200);\n  expect(response.body.bookingid).to.be.not[\"null\"];\n});\ncy.createBooking().should(function (response) {\n  expect(response.status).to.eq(200);\n  expect(response.body.bookingid).to.be.not[\"null\"];\n});",
+              "err": {},
+              "uuid": "80b2a666-bdfa-40b5-9cf7-7c3a71e3957f",
+              "parentUUID": "992f8c04-02eb-42d2-8446-c560d27eaa03",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Criar uma reserva enviando mais parametros no payload da reserva - @e2e",
+              "fullTitle": "Create Booking Criar uma reserva enviando mais parametros no payload da reserva - @e2e",
+              "timedOut": null,
+              "duration": 190,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.createBookingExtraFieldPayLoad().should(function (response) {\n  expect(response.status).to.eq(200);\n});",
+              "err": {},
+              "uuid": "71ea0d4d-58a1-4633-8ee1-7e1be877ec00",
+              "parentUUID": "992f8c04-02eb-42d2-8446-c560d27eaa03",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar retorno 418 quando o header Accept for invalido - @e2e",
+              "fullTitle": "Create Booking Validar retorno 418 quando o header Accept for invalido - @e2e",
+              "timedOut": null,
+              "duration": 203,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.createBookingAcceptHeaderInvalid().should(function (response) {\n  expect(response.status).to.eq(418);\n});",
+              "err": {},
+              "uuid": "dbde676f-c901-4f0a-b766-4d5ee9741e62",
+              "parentUUID": "992f8c04-02eb-42d2-8446-c560d27eaa03",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5f9ded2e-c894-4340-b747-77de074a6a36",
+            "80b2a666-bdfa-40b5-9cf7-7c3a71e3957f",
+            "71ea0d4d-58a1-4633-8ee1-7e1be877ec00",
+            "dbde676f-c901-4f0a-b766-4d5ee9741e62"
+          ],
+          "failures": [],
+          "pending": [
+            "3931de41-23e3-426d-9269-70e94048e3e2"
+          ],
+          "skipped": [],
+          "duration": 1621,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

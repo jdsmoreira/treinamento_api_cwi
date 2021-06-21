@@ -1,0 +1,182 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 3,
+    "failures": -2,
+    "start": "2021-06-21T13:06:19.431Z",
+    "end": "2021-06-21T13:06:20.397Z",
+    "duration": 966,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 60,
+    "other": 2,
+    "hasOther": true,
+    "skipped": 2,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "c29b105a-fb5f-4204-9a38-07bae4219780",
+      "title": "",
+      "fullFile": "cypress/integration/services/UpdateBooking.spec.js",
+      "file": "cypress/integration/services/UpdateBooking.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1d9e807d-354a-42a9-abcb-6c066e744158",
+          "title": "Put Booking",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Alterar um reserva usando token - @acceptance",
+              "fullTitle": "Put Booking Alterar um reserva usando token - @acceptance",
+              "timedOut": null,
+              "duration": 569,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.token().then(function (resToken) {\n  cy.allBookings().then(function (resAllBookings) {\n    cy.updateBookingWithToken(resAllBookings.body[0].bookingid, resToken.body.token).then(function (response) {\n      expect(response.status).to.eq(200);\n      expect(response.body.firstname).to.eq(\"João\");\n    });\n  });\n});",
+              "err": {},
+              "uuid": "a5deda82-5ecf-48df-9b40-2ea4cd25c6d4",
+              "parentUUID": "1d9e807d-354a-42a9-abcb-6c066e744158",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Alterar uma reserva usando o Basic auth - @acceptance",
+              "fullTitle": "Put Booking Alterar uma reserva usando o Basic auth - @acceptance",
+              "timedOut": null,
+              "duration": 360,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.allBookings().then(function (resAllBookings) {\n  cy.updateBookingWithBasicWith(resAllBookings.body[0].bookingid).then(function (response) {\n    expect(response.status).to.eq(200);\n    expect(response.body.firstname).to.eq(\"Jeferson\");\n  });\n});",
+              "err": {},
+              "uuid": "7540b16e-d777-4cb8-8e43-6660e6af7270",
+              "parentUUID": "1d9e807d-354a-42a9-abcb-6c066e744158",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Tentar alterar uma reserva quando o token não for enviado - @e2e",
+              "fullTitle": "Put Booking Tentar alterar uma reserva quando o token não for enviado - @e2e",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "b98f967c-1023-4a18-8f2c-854f1adcf8b1",
+              "parentUUID": "1d9e807d-354a-42a9-abcb-6c066e744158",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Tentar alterar uma reserva quando o token enviado for inválido - @e2e",
+              "fullTitle": "Put Booking Tentar alterar uma reserva quando o token enviado for inválido - @e2e",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "f1914e19-b54f-4774-8ee7-76b0eb251cab",
+              "parentUUID": "1d9e807d-354a-42a9-abcb-6c066e744158",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Tentar alterar uma reserva quando o token enviado for inválido - @e2e",
+              "fullTitle": "Put Booking Tentar alterar uma reserva quando o token enviado for inválido - @e2e",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "679d3b3d-8c21-48a5-9e71-3b7e196f75d9",
+              "parentUUID": "1d9e807d-354a-42a9-abcb-6c066e744158",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a5deda82-5ecf-48df-9b40-2ea4cd25c6d4",
+            "7540b16e-d777-4cb8-8e43-6660e6af7270"
+          ],
+          "failures": [],
+          "pending": [
+            "b98f967c-1023-4a18-8f2c-854f1adcf8b1",
+            "f1914e19-b54f-4774-8ee7-76b0eb251cab",
+            "679d3b3d-8c21-48a5-9e71-3b7e196f75d9"
+          ],
+          "skipped": [],
+          "duration": 929,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

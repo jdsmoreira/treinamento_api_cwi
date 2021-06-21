@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-06-18T14:09:27.702Z",
+    "end": "2021-06-18T14:09:28.486Z",
+    "duration": 784,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9aa08722-eb88-4d04-9122-e26f3a067f76",
+      "title": "",
+      "fullFile": "cypress/integration/services/UpdateBooking.spec.js",
+      "file": "cypress/integration/services/UpdateBooking.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "fce2bf02-7b99-48f8-a058-dc6da8769ce5",
+          "title": "Put Booking",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Alterar um reserva usando token - @acceptance",
+              "fullTitle": "Put Booking Alterar um reserva usando token - @acceptance",
+              "timedOut": null,
+              "duration": 766,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.token().then(function (resToken) {\n  cy.log(resToken.body.token);\n  cy.allBookings().then(function (resAllBookings) {\n    cy.log(resAllBookings.body);\n    cy.updateBookingWithToken(resAllBookings.body[0].bookingid, resToken.body.token).then(function (response) {\n      expect(response.status).to.eq(200);\n      expect(response.body.firstname).to.eq(\"João\");\n    });\n  });\n});",
+              "err": {},
+              "uuid": "50c87464-559d-46bb-9ca9-c081344118f6",
+              "parentUUID": "fce2bf02-7b99-48f8-a058-dc6da8769ce5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "50c87464-559d-46bb-9ca9-c081344118f6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 766,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

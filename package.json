@@ -1,0 +1,28 @@
+{
+  "name": "treinamento_api_cwi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "npx cypress open",
+    "cypress:run": "npx cypress run",
+    "cypress:run-e2e": "npx cypress run --env grep=@e2e",
+    "cypress:run-contract": "npx cypress run --env grep=@contract",
+    "cypress:run-acceptance": "npx cypress run --env grep=@acceptance",
+    "cypress:run-healthcheck": "npx cypress run --env grep=@healthcheck",
+    "cypress:report": "npx mochawesome-merge ./mochawesome-report/json/mochawesome*.json > mochawesome-report/report.json && npx marge mochawesome-report/report.json --autoOpen --showPending=false",
+    "cypress:clean-report": "rm -rf mochawesome-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@hapi/joi": "^17.1.1",
+    "cypress": "^7.5.0",
+    "cypress-select-tests": "^1.7.1",
+    "mocha": "^7.1.1",
+    "mochawesome": "^6.1.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

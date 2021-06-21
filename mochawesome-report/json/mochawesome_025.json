@@ -1,0 +1,181 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 5,
+    "failures": -4,
+    "start": "2021-06-21T12:29:10.296Z",
+    "end": "2021-06-21T12:29:10.341Z",
+    "duration": 45,
+    "testsRegistered": 5,
+    "passPercent": null,
+    "pendingPercent": 100,
+    "other": 4,
+    "hasOther": true,
+    "skipped": 4,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "38204cde-6e29-4fe1-8bd3-bf9b2b63d116",
+      "title": "",
+      "fullFile": "cypress/integration/services/UpdateBooking.spec.js",
+      "file": "cypress/integration/services/UpdateBooking.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "213844de-a47d-4ba1-8ac2-35c0fed7bca7",
+          "title": "Put Booking",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Alterar um reserva usando token - @acceptance",
+              "fullTitle": "Put Booking Alterar um reserva usando token - @acceptance",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "79b9deed-53d4-4941-bbe9-fe6448a02537",
+              "parentUUID": "213844de-a47d-4ba1-8ac2-35c0fed7bca7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Alterar uma reserva usando o Basic auth - @acceptance",
+              "fullTitle": "Put Booking Alterar uma reserva usando o Basic auth - @acceptance",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "d30475c4-7af3-4ca5-a6c2-10102bb3cd50",
+              "parentUUID": "213844de-a47d-4ba1-8ac2-35c0fed7bca7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Tentar alterar uma reserva quando o token não for enviado - @e2e",
+              "fullTitle": "Put Booking Tentar alterar uma reserva quando o token não for enviado - @e2e",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "dda6b305-1b69-4644-9c19-844ae26a3473",
+              "parentUUID": "213844de-a47d-4ba1-8ac2-35c0fed7bca7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Tentar alterar uma reserva quando o token enviado for inválido - @e2e",
+              "fullTitle": "Put Booking Tentar alterar uma reserva quando o token enviado for inválido - @e2e",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "731b04e7-ba24-41e4-9637-0c7d4475dc42",
+              "parentUUID": "213844de-a47d-4ba1-8ac2-35c0fed7bca7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Tentar alterar uma reserva quando o token enviado for inválido - @e2e",
+              "fullTitle": "Put Booking Tentar alterar uma reserva quando o token enviado for inválido - @e2e",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "dc406d4f-12db-45a8-af5f-fe81fe2a2047",
+              "parentUUID": "213844de-a47d-4ba1-8ac2-35c0fed7bca7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [
+            "79b9deed-53d4-4941-bbe9-fe6448a02537",
+            "d30475c4-7af3-4ca5-a6c2-10102bb3cd50",
+            "dda6b305-1b69-4644-9c19-844ae26a3473",
+            "731b04e7-ba24-41e4-9637-0c7d4475dc42",
+            "dc406d4f-12db-45a8-af5f-fe81fe2a2047"
+          ],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

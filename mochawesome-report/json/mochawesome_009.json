@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 3,
+    "failures": -2,
+    "start": "2021-06-21T12:18:28.923Z",
+    "end": "2021-06-21T12:18:28.952Z",
+    "duration": 29,
+    "testsRegistered": 3,
+    "passPercent": null,
+    "pendingPercent": 100,
+    "other": 2,
+    "hasOther": true,
+    "skipped": 2,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "0b95f5e1-cb98-49ec-8f87-742900dd3e1e",
+      "title": "",
+      "fullFile": "cypress/integration/services/DeleteBooking.spec.js",
+      "file": "cypress/integration/services/DeleteBooking.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a9427527-e51e-422a-aa88-e95c886da9ab",
+          "title": "Delete Booking",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Excluir um reserva com sucesso - @acceptance",
+              "fullTitle": "Delete Booking Excluir um reserva com sucesso - @acceptance",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "4c180af9-3041-4e5b-a83a-08525967db39",
+              "parentUUID": "a9427527-e51e-422a-aa88-e95c886da9ab",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Tentar excluir um reserva que não existe - @e2e",
+              "fullTitle": "Delete Booking Tentar excluir um reserva que não existe - @e2e",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "3eebceeb-d0f4-4e8a-8e54-1043475ccd86",
+              "parentUUID": "a9427527-e51e-422a-aa88-e95c886da9ab",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Tentar excluir uma reserva sem autorização - @e2e",
+              "fullTitle": "Delete Booking Tentar excluir uma reserva sem autorização - @e2e",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "223ecee0-96c2-4fa2-b47c-e64c392ec40c",
+              "parentUUID": "a9427527-e51e-422a-aa88-e95c886da9ab",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [
+            "4c180af9-3041-4e5b-a83a-08525967db39",
+            "3eebceeb-d0f4-4e8a-8e54-1043475ccd86",
+            "223ecee0-96c2-4fa2-b47c-e64c392ec40c"
+          ],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

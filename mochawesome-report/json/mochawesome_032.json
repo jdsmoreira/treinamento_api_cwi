@@ -1,0 +1,182 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 4,
+    "failures": -3,
+    "start": "2021-06-21T13:06:07.280Z",
+    "end": "2021-06-21T13:06:08.188Z",
+    "duration": 908,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 80,
+    "other": 3,
+    "hasOther": true,
+    "skipped": 3,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "763628f9-f06d-4279-87e7-48625f77df51",
+      "title": "",
+      "fullFile": "cypress/integration/services/CreateBooking.spec.js",
+      "file": "cypress/integration/services/CreateBooking.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "895d6fde-ef60-4441-8199-c1422c41df46",
+          "title": "Create Booking",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Criar uma nova reserva - @acceptance",
+              "fullTitle": "Create Booking Criar uma nova reserva - @acceptance",
+              "timedOut": null,
+              "duration": 878,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.createBooking().should(function (response) {\n  expect(response.status).to.eq(200);\n  expect(response.body.bookingid).to.be.not[\"null\"];\n});",
+              "err": {},
+              "uuid": "1f9fb4e3-d71a-4ba2-8a40-49d7608e3d3b",
+              "parentUUID": "895d6fde-ef60-4441-8199-c1422c41df46",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar retorno 500 quando o payload da reserva estiver inválido - @e2e",
+              "fullTitle": "Create Booking Validar retorno 500 quando o payload da reserva estiver inválido - @e2e",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "4dd04eb3-2bda-49b0-b6f6-953af19e705c",
+              "parentUUID": "895d6fde-ef60-4441-8199-c1422c41df46",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar a criacao de mais de um livro em sequencia - @e2e",
+              "fullTitle": "Create Booking Validar a criacao de mais de um livro em sequencia - @e2e",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "d107aeaa-6534-4cec-8585-16a110ca20dc",
+              "parentUUID": "895d6fde-ef60-4441-8199-c1422c41df46",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Criar uma reserva enviando mais parametros no payload da reserva - @e2e",
+              "fullTitle": "Create Booking Criar uma reserva enviando mais parametros no payload da reserva - @e2e",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "166f185c-d7af-4d6a-b41b-72e286b98a8a",
+              "parentUUID": "895d6fde-ef60-4441-8199-c1422c41df46",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar retorno 418 quando o header Accept for invalido - @e2e",
+              "fullTitle": "Create Booking Validar retorno 418 quando o header Accept for invalido - @e2e",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "37848485-06a6-4f3f-995c-0e0d1aff85ee",
+              "parentUUID": "895d6fde-ef60-4441-8199-c1422c41df46",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1f9fb4e3-d71a-4ba2-8a40-49d7608e3d3b"
+          ],
+          "failures": [],
+          "pending": [
+            "4dd04eb3-2bda-49b0-b6f6-953af19e705c",
+            "d107aeaa-6534-4cec-8585-16a110ca20dc",
+            "166f185c-d7af-4d6a-b41b-72e286b98a8a",
+            "37848485-06a6-4f3f-995c-0e0d1aff85ee"
+          ],
+          "skipped": [],
+          "duration": 878,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
