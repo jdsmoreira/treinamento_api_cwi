@@ -7,4 +7,5 @@ describe('Get Booking', () => {
             return bookingSchema.validateAsync(response.body)
         })
     });
+    
 });
